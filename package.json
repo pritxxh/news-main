@@ -1,0 +1,26 @@
+{
+  "name": "news-site-template",
+  "version": "1.0.0",
+  "description": "News Site boilerplate",
+  "scripts": {
+    "dev": "http-server . -p 7002 -c-1 --cors -o",
+    "build": "node scripts/build.js",
+    "serve": "http-server ./dist -p 7003 --cors -o",
+    "pretty": "prettier . --write",
+    "stylelint": "stylelint **/*.css --fix",
+    "format": "npm run pretty ; npm run stylelint"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "news-site-css": "^1.8.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "stylelint": "^15.6.0",
+    "stylelint-config-standard": "^33.0.0"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
